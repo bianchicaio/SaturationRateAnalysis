@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Carregar os dados
-df = pd.read_csv("sat_rawdataweek2.csv")
+df = pd.read_excel("sat_rawdataweek.xlsx")
 
 # Garantir que as colunas relevantes sejam do tipo numérico
 df['AHT'] = pd.to_numeric(df['AHT'], errors='coerce').astype(float)
